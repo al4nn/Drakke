@@ -1,0 +1,789 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+.container{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+  
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #E40044;
+}
+  
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #e6e6e6;
+}
+
+	/***** NÃO APAGAR ACIMA *****/
+
+header{
+	padding: 20px 2% 35px 2%;
+	height: 130px;
+}
+
+header div.logo{
+	float: left;
+}
+
+header div.logo img{
+	width: 250px;
+}
+
+header nav.desktop{
+	float: right;
+	position: relative;
+	top: 30px;
+}
+
+nav.mobile{
+	margin-top: 15px;
+	float: right;
+	width: 32px;
+	height: 32px;
+	background-size: 100% 100%;
+	cursor: pointer;
+	background-image: url('../imagens/icon_menu.png');
+	display: none;
+}
+
+nav.mobile ul{
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 105px;
+	border-bottom: 4px solid #E40044;
+	z-index: 999;
+	position: absolute;
+	text-align: center;
+	background-color: white;
+}
+
+nav.mobile li{
+	font-size: 23px;
+	padding: 20px 0px;
+}
+
+nav.mobile li a{
+	color: black;
+	text-decoration: none;
+}
+
+header nav.desktop ul{
+	list-style-type: none;
+}
+
+header nav.desktop ul li{
+	float: left;
+	font-size: 23px;
+	padding: 0 30px;
+}
+
+header nav.desktop a{
+    color: black;
+    text-decoration: none;
+}
+
+section.banner{
+	overflow: hidden;
+	width: 100%;
+	height: 650px;
+	background-image: url('../imagens/camisa-temp-1.jpeg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+section.veiculos-destaque{
+	padding: 90px 2%;
+}
+
+section.veiculos-destaque .container{
+	padding: 40px 0;
+}
+
+.line-titulo{
+	max-width: 1400px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.ln1{
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	top: 16px;
+	background-color:#e40044;
+}
+
+.line-titulo h2{
+	position: relative;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+	font-size: 27px;
+	padding: 0 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.vitrine-destaque{
+	float: left;
+	width: 33.3%;
+}
+
+.vitrine-destaque .carro-img{
+	width: 100%;
+	padding-top: 100%;
+	border: 8px solid white;
+	background-size: 100% 75%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.vitrine-destaque h2{
+	padding-left: 8px;
+	color: black;
+	font-size: 20px;
+}
+
+.vitrine-destaque p{
+	padding-top: 8px;
+	padding-left: 8px;
+	color: #353535;
+	font-size: 15px;
+}
+
+.btn1{
+	text-align: center;
+	display: block;
+	line-height: 40px;
+	background-color:#E40044;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	width: 150px;
+}
+
+.vitrine-destaque a{
+	margin-left: 8px;
+	margin-top: 10px;
+}
+
+.servicos-descricao{
+	display: flex;
+}
+
+.half1{
+	width: 50%;
+	text-align: right;
+	padding: 90px 0;
+	background: #242424;
+	color: white;
+}
+
+.half1-wraper{
+	padding-right: 20%;
+	text-align: left;
+	display: inline-block;
+}
+
+.half1-wraper h2{
+	font-weight: normal;
+	font-size: 32px;
+}
+
+.half1-wraper ul{
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.half1-wraper li{
+	margin-left: 15px;
+}
+
+.half1-wraper a{
+	margin-left: 40px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.half2{
+	width: 50%;
+	padding: 90px 100px;
+	background:#EB2D2D;
+	color: white;
+}
+
+.half2 h2{
+	font-weight: normal;
+	font-size: 32px;
+}
+
+.half2 .depoimento-single{
+	margin-top: 19px;
+}
+
+.depoimento-single p{
+	font-size: 22px;
+}
+
+.navigation{
+	float: left;
+	width: 100%;
+	max-width: 700px;
+	margin-top: 30px;
+}
+
+.arrows{
+	float: left;
+}
+
+.arrows > img{
+	color: white;
+}
+
+.navigation img{
+	cursor: pointer;
+	margin: 0 20px;
+}
+
+.nome-depoimento{
+	float: right;
+	color: #252525;
+	font-size: 23px;
+}
+
+section.contato{
+    padding: 40px 0;
+}
+
+section.contato .container-contato{
+    margin-top: 20px;
+}
+
+section.contato .contato-wraper{
+    width: 100%;
+    text-align: center;
+}
+
+section.contato .contato-wraper a{
+    text-decoration: none;
+    color: black;
+}
+
+section.contato .contato-wraper a:hover{
+    color: #E40044;
+    transition: 0.5s;
+}
+
+section.contato .contato-wraper a p{
+    margin-top: 10px;
+}
+
+section.contato .contato-wraper a i{
+    font-size: 18px;
+}
+
+section.contato form{
+    margin-top: 20px;
+    text-align: center;
+}
+
+section.contato form label{
+    position: relative;
+    display: block;
+}
+
+section.contato form label input{
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #E40044;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+section.contato form label textarea{
+    resize: none;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #E40044;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    height: 150px;
+}
+
+section.contato form label input::placeholder{
+    transition: all 0.2s ease-in-out;
+    color: #999;
+}
+
+section.contato form label textarea::placeholder{
+    transition: all 0.2s ease-in-out;
+    color: #999;
+}
+
+section.contato form label input:focus, form label input.populated{
+    padding-top: 28px;
+    padding-bottom: 12px;
+}
+
+section.contato form label textarea:focus, form label textarea.populated{
+    padding-top: 28px;
+    padding-bottom: 12px;
+}
+
+section.contato form label input:focus::placeholder, form label input.populated::placeholder{
+    color: transparent;
+}
+
+section.contato form label textarea:focus::placeholder, form label textarea.populated::placeholder{
+    color: transparent;
+}
+
+section.contato form label input:focus + span, form label input.populated + span{
+    opacity: 1;
+    top: 10px;
+}
+
+section.contato form label textarea:focus + span, form label textarea.populated + span{
+    opacity: 1;
+    top: 10px;
+}
+
+section.contato form label span{
+    color: #E40044;
+    font: 13px Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+section.contato form input[type="submit"]{
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background-color: #dd567f;
+    color: white;
+    padding: 16px 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+section.contato form input[type="submit"]:hover{
+    background-color: #E40044;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+footer{
+	margin-top: 20px;
+	padding: 40px 2%;
+	background-color: #252525;
+}
+
+footer nav{
+	float: left;
+}
+
+footer nav ul{
+	list-style-type: none;
+}
+
+footer nav ul li{
+	float: left;
+	padding: 0 25px;
+	font-size: 19px;
+}
+
+footer nav ul a {
+	color: white;
+	text-decoration: none;
+}
+
+footer p{
+	float: right;
+	color: white;
+	font-size: 19px;
+}
+
+section.venda{
+	min-height: 90%;
+	padding: 50px 0;
+}
+
+.content-venda{
+	margin-top: 40px;
+}
+
+.vitrine-venda{
+	overflow: hidden;
+	float: left;
+	width: 100%;
+}
+
+.vitrine-venda .vitrine-destaque{
+	margin-top: 20px;
+}
+
+section.venda-single{
+	padding: 80px 2% 0 2%;
+}
+
+section.venda-single .container{
+	text-align: center;
+	padding: 40px 0 0 0;
+	max-width: 1280px;
+}
+
+.info-veiculo{
+	display: inline-block;
+	width: 60%;
+}
+
+.foto-destaque{
+	width: 100%;
+	padding-top: 70%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.descricao-veiculo{
+	display: inline-block;
+	width: auto;
+	vertical-align: top;
+	padding: 60px 20px;
+	text-align: left;
+}
+
+.descricao-veiculo p{
+	max-width: 200px;
+	font-size: 17px;
+	margin-top: 25px;
+}
+
+.descricao-veiculo a{
+	margin-top: 25px;
+}
+
+.nav-galeria-parent{
+	width: 100%;
+	padding: 30px;
+	position: relative;
+}
+
+.arrow-left-nav{
+	position: absolute;
+	left: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	cursor: pointer;
+	background-image: url('../imagens/chevron-left.png');
+	background-size: 100% 100%;
+	width: 22px;
+	height: 22px;
+}
+
+.arrow-right-nav{
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	cursor: pointer;
+	background-image: url('../imagens/chevron-right.png');
+	background-size: 100% 100%;
+	width: 22px;
+	height: 22px;
+}
+
+.info-bread{
+	padding: 20px 0;
+	text-align: left;
+}
+
+.info-bread a{
+	text-decoration: none;
+	color: black;
+}
+
+.info-bread a:last-child{
+	color: #EB2D2D;
+}
+
+.info-bread span{
+	padding: 0 30px;
+}
+
+.nav-galeria{
+	overflow: hidden;
+	width: 100%;
+}
+
+/*.nav-galeria-wraper{
+	Via JS
+}*/
+
+.mini-img-wraper{
+	float: left;
+	padding: 9px;
+	/* Via JS / width: calc(33.3% * (100  200)); */
+}
+
+.mini-img{
+	width: 100%;
+	cursor: pointer;
+	padding-top: 70%;
+	background-position: center;
+	background-size: cover;
+}
+
+section.sobre{
+	min-height: 90%;
+	padding: 60px 2% 20px 2%;
+}
+
+section.sobre .container{
+	max-width: 840px;
+	margin-top: 30px;
+}
+
+section.sobre .img-destaque-sobre{
+	width: 100%;
+	padding-top: 60%;
+	background-image: url('../imagens/drakke_logo_completo.png');
+	background-size: 100% 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+section.sobre .descricao-autor{
+	margin-top: 20px;
+}
+
+.descricao-autor h2{
+	font-size: 24px;
+}
+
+.descricao-autor p{
+	line-height: 25px;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.descricao-autor2{
+	margin-top: 20px;
+}
+
+.img-small{
+	width: 20%;
+	padding-top: 20%;
+	float: left;
+	background-image: url('../imagens/drakke_logo_site.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.descricao-autor2 p{
+	font-size: 16px;
+	float: left;
+	width: 80%;
+	line-height: 25px;
+	padding: 40px;
+}
+
+@media screen and (max-width: 1100px){
+	.half1{
+		text-align: center;
+	}
+
+	.half1-wraper{
+		text-align: left;
+		padding-right: 0;
+	}
+
+	.half1-wraper a{
+		display: block;
+		margin-left: 0;
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.nome-depoimento{
+		float: left;
+		width: 100%;
+		margin: 20px 20px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	footer nav{
+		display: none;
+	}
+
+	footer{
+		text-align: center;
+	}
+
+	footer p{
+		float: none;
+	}
+
+	.w50{
+		width: 100%;
+	}
+
+	.nome-depoimento{
+	float: right;
+	width: auto;
+	margin: 0px 0px;
+	}
+
+	section.servicos-descricao{
+		flex-direction: column;
+	}
+
+	.half1,.half2{
+		padding: 80px 4%;
+		width: 100%;
+	}
+
+	section.banner{
+		background-size: cover;
+		background-position: left;
+		height: 35vh;
+		margin-bottom: -50px;
+	}
+
+	nav.desktop{
+		display: none;
+	}
+
+	nav.mobile{
+		display: block;
+	}
+
+	.vitrine-venda{
+		width: 100%;
+		text-align: center;
+	}
+
+	.info-veiculo{
+		width: 100%;
+	}
+
+	.descricao-veiculo{
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	.descricao-veiculo a{
+		display: inline-block;
+	}
+
+	.descricao-veiculo p{
+		max-width: none;
+	}
+}
+
+@media screen and (max-width: 580px){
+	.text-banner{
+		padding: 30px;
+	}
+
+	.text-banner-single{
+		width: 240px;
+		font-size: 18px;
+	}
+
+	.text-banner .text-banner-single:nth-of-type(4){
+		width: 270px;
+	}
+
+	section.veiculos-destaque .line-titulo h2{
+		font-size: 23px;
+		}
+
+	section.veiculos-destaque .container{
+		max-width: 1000px;
+		padding: 40px 0;
+		text-align: center;
+	}
+
+	.vitrine-destaque{
+		display: inline-block;
+		float: none;
+		margin-top: -50px;
+	}
+
+	.vitrine-destaque .carro-img{
+		width: 88vw;
+		height: 50vh;
+	}
+
+	.vitrine-destaque a{
+		display: inline-block;
+	}
+
+	.img-small{
+		width: 100%;
+		padding-top: 100%;
+		display: none;
+		
+	}
+
+	.descricao-autor2 p{
+		width: 100%;
+		padding: 0px 0;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.vitrine-destaque{
+		width: 100%;
+	}
+}
